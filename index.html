@@ -1,4 +1,4 @@
-<html>
+ <html>
   <head>
     <title>JavaScript &amp; jQuery Example</title>
 
@@ -55,6 +55,12 @@
           alert("The looping function should go here.");
         });
         // attach an event listener to the Clear button here
+       $('input[value="Clear"]').click( function(){
+          console.log('Caught a "Clear" click event.');
+          $("#output_area").removeClass( 'selected');
+          alert("Click the Run Script button.");
+          });
+
       }); // end of $(document).ready
       /*
         This function prepares a string variable with HTML and then uses jQuery
